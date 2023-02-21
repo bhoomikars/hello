@@ -4,7 +4,7 @@ Docker k8 deployment steps :
 1. git clone 
 2. mvn clean install
 3. docker login(login to docker hub https://hub.docker.com/)
-4. docker build -t bhoomikars/hello:latest  (bhoomikars is the docker account name)
+4. docker build -t bhoomikars/hello:latest .  (bhoomikars is the docker account name)
 5. docker run -d -p 8080:8080 bhoomikars/hello (map your system port to docker container port run in demon mode)
 6. docker push bhoomikars/hello -> this will by default push the latest image
 7. check images in docker hub
